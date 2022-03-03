@@ -10,7 +10,7 @@ public class Caballo extends Animal{
     
     @Override
     public void Alimentarse(){
-    
+            System.out.printf("EL CABALLO SE ALIMENTA CON %s\n",this.alimento);
     }
     
 }
