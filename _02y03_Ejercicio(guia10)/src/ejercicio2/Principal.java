@@ -21,14 +21,17 @@ import java.util.List;
 public class Principal {
     
     public static void main(String[] args) {
+//        EJERCICIO 1:  
+
 //        Lavadora lavadora = new Lavadora();
 //        lavadora.crearLavadora();
 //        System.out.println(lavadora.toString());
 //        Televisor tv = new Televisor();
 //        tv.crearTelevisor();
 //        System.out.println(tv.toString());
-//Double resolucion, Boolean sintonizadorTDT, Double precio, String color, char consumoEnergetico, Double peso)
-        
+
+
+//      EJERCICIO 2:  
         List<Electrodomestico> listaElectrodomestico = new ArrayList<>();
         listaElectrodomestico.add(new Lavadora(50d, 5000d,"Blanco", 'F', 50d));
         listaElectrodomestico.add(new Lavadora(93d, 2500d,"Rojo", 'A', 70d));
