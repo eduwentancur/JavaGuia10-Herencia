@@ -52,7 +52,6 @@ public class Lavadora extends Electrodomestico {
         this.carga=teclado.nextDouble();
         System.out.println("LAVADORA CREADA");
         precioFinal();
-        
     }
     
     @Override

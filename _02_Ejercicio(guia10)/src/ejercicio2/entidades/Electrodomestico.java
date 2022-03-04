@@ -76,30 +76,29 @@ public class Electrodomestico {
         this.peso = peso;
     }
 
-    public char comprobarConsumoEnergetico(char letra) {
+    public void comprobarConsumoEnergetico(char letra) {
         if (letra != 'A' && letra != 'B' && letra != 'C' && letra != 'D' && letra != 'E') {
-            return 'F';
+            this.consumoEnergetico='F';
         }
-        return letra;
+        this.consumoEnergetico = letra;
     }
 
-    public String comprobarColor(String color) {
+    public void comprobarColor(String color) {
         if (!color.equalsIgnoreCase("Negro") || !color.equalsIgnoreCase("Rojo") || !color.equalsIgnoreCase("Azul") || !color.equalsIgnoreCase("Gris")) {
-            return this.color = "Blanco";
+            this.color = "Blanco";
         }
-        return this.color;
+        this.color= color;
     }
     
     public void crearElectrodomestico() {
         this.precio = 1000d;
         do {
             System.out.println("CREAR ELECTRODOMESTICO\n Ingrese Color");
-            this.color = comprobarColor(teclado.next());
+            comprobarColor(teclado.next());
             System.out.println(" Ingrese Consumo entre A y F");
-            this.consumoEnergetico = comprobarConsumoEnergetico(teclado.next().toUpperCase().charAt(0));
+            comprobarConsumoEnergetico(teclado.next().toUpperCase().charAt(0));
             System.out.println("Ingrese el peso");
             this.peso = teclado.nextDouble();
-            
         } while (this.color==null || this.peso==null || this.precio ==null || this.consumoEnergetico==' ');
         
     }
