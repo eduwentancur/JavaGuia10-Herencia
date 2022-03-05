@@ -22,7 +22,6 @@ package ejercicio2.entidades;
 import java.util.Locale;
 import java.util.Scanner;
 
-
 public class Televisor extends Electrodomestico {
     
     private Double resolucion;
@@ -67,14 +66,6 @@ public class Televisor extends Electrodomestico {
         precioFinal();
     }
     
-    /*
-    Método precioFinal(): este método será heredado y se le sumará la siguiente
-funcionalidad. Si el televisor tiene una resolución mayor de 40 pulgadas, se
-incrementará el precio un 30% y si tiene un sintonizador TDT incorporado,
-aumentará $500. Recuerda que las condiciones que hemos visto en la clase
-Electrodomestico también deben afectar al precio.
-*/
-    
     @Override
     public double precioFinal(){
         if (this.resolucion>40) {
@@ -88,15 +79,7 @@ Electrodomestico también deben afectar al precio.
 
     @Override
     public String toString() {
-        return String.format("%s resolucion= %s sintonizadorTDT= %s", super.toString(),this.resolucion,this.sintonizadorTDT  );
+        return String.format("El televisor: %s con una resolucion= %s y sintonizadorTDT= %s\n", super.toString(),this.resolucion,this.sintonizadorTDT  );
     }
-    
-    
-    
-    
-    
-    
-    
-    
     
 }

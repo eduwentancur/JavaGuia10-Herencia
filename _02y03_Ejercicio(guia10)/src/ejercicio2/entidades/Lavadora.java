@@ -64,14 +64,6 @@ public class Lavadora extends Electrodomestico {
 
     @Override
     public String toString() {
-        return String.format("%s carga= %.2f KG", super.toString(), carga );
+        return String.format("La lavadora: %s y tiene una carga= %.2f KG\n", super.toString(), carga );
     }
-
-    
-
-    
-    
-    
-    
-    
 }

@@ -30,7 +30,6 @@ public class Principal {
 //        tv.crearTelevisor();
 //        System.out.println(tv.toString());
 
-
 //      EJERCICIO 2:  
         List<Electrodomestico> listaElectrodomestico = new ArrayList<>();
         listaElectrodomestico.add(new Lavadora(50d, 5000d,"Blanco", 'F', 50d));
@@ -50,12 +49,7 @@ public class Principal {
                 System.out.println(elec.toString());
                 sumaTotal+=elec.getPrecio();
             }
-            
         }
-        
         System.out.printf("LA SUMA TOTAL DE TODOS LOS ELECTRODOMESTICOS ES DE $%.2f\n", sumaTotal);
-        
-        
     }
-
 }
