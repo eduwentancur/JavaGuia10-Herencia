@@ -32,13 +32,15 @@ public class Principal {
 
 //      EJERCICIO 2:  
         List<Electrodomestico> listaElectrodomestico = new ArrayList<>();
-        listaElectrodomestico.add(new Lavadora(50d, 5000d,"Blanco", 'F', 50d));
-        listaElectrodomestico.add(new Lavadora(93d, 2500d,"Rojo", 'A', 70d));
+        Electrodomestico lavadora1 = new Lavadora(50d, 5000d,"Blanco", 'F', 50d);
+        Electrodomestico lavadora2 = new Lavadora(93d, 2500d,"Rojo", 'A', 70d);
+        listaElectrodomestico.add(lavadora1);
+        listaElectrodomestico.add(lavadora2);
         listaElectrodomestico.add(new Televisor(1940d,true,2600d,"Negro", 'B', 6d ));
         listaElectrodomestico.add(new Televisor(8000d,true,2800d,"Negro", 'B', 3d ));
         
         double sumaTotal=0;
-        
+
         for (Electrodomestico elec: listaElectrodomestico) {
             elec.precioFinal();
             if (elec instanceof Lavadora ) {
