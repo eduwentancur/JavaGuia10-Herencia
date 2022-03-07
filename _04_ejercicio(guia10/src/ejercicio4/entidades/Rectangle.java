@@ -5,8 +5,8 @@ import ejercicio4.interfaces.calculationsFigures;
 
 public class Rectangle implements calculationsFigures {
    
-    private double base;
-    private double height;
+    private Double base;
+    private Double height;
 
     public Rectangle() {
     }

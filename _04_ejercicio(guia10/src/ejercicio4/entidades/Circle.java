@@ -4,8 +4,8 @@ package ejercicio4.entidades;
 import ejercicio4.interfaces.calculationsFigures;
 
 public class Circle implements calculationsFigures {
-    private double radio;
-    private double diameter;
+    private Double radio;
+    private Double diameter;
 
     public Circle() {
     }
