@@ -1,7 +1,7 @@
 
 package ejercicio4.interfaces;
 
-public interface calculationsFigures {
+public interface CalculationsFigures {
     
     double PI = Math.PI;
     

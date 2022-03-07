@@ -1,9 +1,9 @@
 
 package ejercicio4.entidades;
 
-import ejercicio4.interfaces.calculationsFigures;
+import ejercicio4.interfaces.CalculationsFigures;
 
-public class Rectangle implements calculationsFigures {
+public class Rectangle implements CalculationsFigures {
    
     private Double base;
     private Double height;
