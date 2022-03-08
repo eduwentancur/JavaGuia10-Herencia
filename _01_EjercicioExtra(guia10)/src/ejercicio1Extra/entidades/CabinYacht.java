@@ -1,24 +1,25 @@
 
-package ejercicio4.entidades;
+package ejercicio1Extra.entidades;
 
-import java.util.Date;
+import java.time.LocalDate;
+import java.util.Scanner;
 
 
-public class CabinsYachts extends Boat {
+
+public class CabinYacht extends Boat {
     
     private Integer powerCV;
     private Integer numberCabinsForYachts;
-
-    public CabinsYachts() {
+    private Scanner teclado;
+    
+    public CabinYacht() {
     }
 
-    public CabinsYachts(Integer power, Integer numberCabinsForYachts, Integer enrollment, Integer boatSize, Date yearManufactured) {
+    public CabinYacht(Integer power, Integer numberCabinsForYachts, Integer enrollment, Integer boatSize, LocalDate yearManufactured) {
         super(enrollment, boatSize, yearManufactured);
         this.powerCV = power;
         this.numberCabinsForYachts = numberCabinsForYachts;
     }
-
-    
 
     public Integer getPowerCV() {
         return powerCV;
@@ -36,9 +37,8 @@ public class CabinsYachts extends Boat {
         this.numberCabinsForYachts = numberCabinsForYachts;
     }
     
-    
-    
-    
-    
-    
+    @Override
+    public String toString() {
+        return String.format("%s tiene de potencia %s y tiene %s camarotes para el yate", super.toString(),this.powerCV,this.numberCabinsForYachts);
+    }
 }
